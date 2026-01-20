@@ -33,7 +33,12 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.organization=abhisonarcloud
-            -Dsonar.projectKey=abhisonarcloud_sonarcloud-demo
-            -Dsonar.projectName=sonarcloud-demo
+            -Dsonar.organization=abch234
+            -Dsonar.projectKey=abch234_Sonarcloud_Demo
+            -Dsonar.projectName=Sonarcloud_Demo
+            -Dsonar.sources=.
+            -Dsonar.exclusions=**/tests/**,**/docs/**,**/vendor/**,**/*.md
+            -Dsonar.sourceEncoding=UTF-8
+            -Dsonar.qualitygate.wait=true
+            -Dsonar.qualitygate.timeout=300
 
