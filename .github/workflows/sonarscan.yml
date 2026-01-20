@@ -36,3 +36,4 @@ jobs:
             -Dsonar.organization=abhisonarcloud
             -Dsonar.projectKey=abhisonarcloud_sonarcloud-demo
             -Dsonar.projectName=sonarcloud-demo
+
